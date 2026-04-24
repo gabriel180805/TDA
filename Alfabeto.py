@@ -3,6 +3,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 
+simpcomplex = gudhi.SimplexTree()
 
 def DrawSimplicialComplex(simpcomplex, pos=None):
     nodes=[]; edges=[]
@@ -36,8 +37,6 @@ def EulerCharacteristic(simpcomplex, verbose = 'True'):
     return Euler_characteristic
 
 def letter_A():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
     simpcomplex.insert([1,2])
     simpcomplex.insert([2,0])
@@ -46,8 +45,6 @@ def letter_A():
     return simpcomplex
 
 def letter_B():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
     simpcomplex.insert([1,2])
     simpcomplex.insert([2,0])
@@ -57,8 +54,6 @@ def letter_B():
     return simpcomplex
 
 def letter_C():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
     return simpcomplex
 
@@ -72,8 +67,6 @@ def letter_D():
     return simpcomplex
 
 def letter_E():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
     simpcomplex.insert([1,2])
     simpcomplex.insert([2,3])
@@ -82,8 +75,6 @@ def letter_E():
     return simpcomplex
 
 def letter_F():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
     simpcomplex.insert([1,2])
     simpcomplex.insert([2,3])
@@ -92,14 +83,11 @@ def letter_F():
     return simpcomplex
 
 def letter_G():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
+    
     return simpcomplex
 
 def letter_H():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,2])
     simpcomplex.insert([1,3])
     simpcomplex.insert([2,3])
