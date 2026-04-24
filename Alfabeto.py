@@ -42,6 +42,7 @@ def letter_A():
     simpcomplex.insert([2,0])
     simpcomplex.insert([3,0])
     simpcomplex.insert([4,1])
+    
     return simpcomplex
 
 def letter_B():
@@ -51,15 +52,15 @@ def letter_B():
     simpcomplex.insert([2,3])
     simpcomplex.insert([3,4])
     simpcomplex.insert([4,2])
+    
     return simpcomplex
 
 def letter_C():
     simpcomplex.insert([0,1])
+    
     return simpcomplex
 
 def letter_D():
-    simpcomplex = gudhi.SimplexTree()
-
     simpcomplex.insert([0,1])
     simpcomplex.insert([1,2])
     simpcomplex.insert([2,0])
@@ -72,6 +73,7 @@ def letter_E():
     simpcomplex.insert([2,3])
     simpcomplex.insert([2,4])
     simpcomplex.insert([4,5])
+    
     return simpcomplex
 
 def letter_F():
